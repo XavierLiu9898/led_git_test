@@ -97,8 +97,8 @@ void main(void)
 
 __interrupt void INT_Led_Toggle_Timer_ISR(void)
 {
-    //GPIO_togglePin(myBoardLED0_GPIO);
-    GPIO_togglePin(myBoardLED1_GPIO);
+    GPIO_togglePin(myBoardLED0_GPIO);
+    //GPIO_togglePin(myBoardLED1_GPIO);
 
     Interrupt_clearACKGroup(INT_Led_Toggle_Timer_INTERRUPT_ACK_GROUP);
 }
